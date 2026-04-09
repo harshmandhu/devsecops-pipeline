@@ -1,3 +1,4 @@
+<<
 name: my-workflow
 
 on: 
@@ -111,4 +112,5 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -f Docker-files/app/multistage/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG       
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG      
+          << 
