@@ -65,8 +65,8 @@ jobs:
       - name: Run Trivy filesystem scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan_type: fs
-          scan_ref: .
+          scan-type: fs
+          scan-ref: .
           format: json
           exit-code: 0
           vuln-type: os,library
